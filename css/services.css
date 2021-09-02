@@ -1,0 +1,304 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: "Open Sans",sans-serif;
+	font-size: 16px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	padding: 0;
+}
+
+.preview{
+	background-position: center;
+	background-size: cover;
+}
+
+.preview--services {
+	background: url('../img/headline.png') no-repeat;
+	padding-bottom: 25px;
+}
+
+.container {
+	width: 1140px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.header {
+	padding-top: 15px;
+}
+
+.header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu__list {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.menu__item {
+	margin-right: 54px;
+}
+.menu__item:hover{
+	color: #DA0100;
+}
+
+.menu__item:last-child {
+	margin-right: 0;
+}
+
+.contacts {
+	text-align: right;
+	color: #FFFFFF;
+}
+
+.contacts__phone {
+	font-size: 26px;
+	color: #FFFFFF
+	font-weight: 400;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.contacts__graph {
+	display: inline-block;
+	position: relative;
+	text-decoration-line: underline;
+	font-size: 13px;
+}
+
+.main__description {
+	margin-top: 105px;
+}
+
+.title {
+	font-size: 72px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.breadcrumbs {
+	margin-top: 35px;
+}
+
+.breadcrumbs__list {
+	display: flex;
+	align-items: center;
+	color: #9A9A9A;
+}
+
+.breadcrumbs__item {
+	margin-right: 4px;
+}
+
+.breadcrumbs__item:after {
+	content: "/";
+	text-decoration: none;
+}
+
+.breadcrumbs__item--activ .breadcrumbs__link {
+	font-weight: 700;
+}
+
+.breadcrumbs__item:last-child {
+	pointer-events: none;
+	cursor: default;
+}
+
+.breadcrumbs__item:last-child:after {
+	display: none;
+	margin-right: 0;
+}
+
+.breadcrumbs__link {
+	font-size: 14px;
+	color: #9A9A9A
+	font-weight: 400;
+	text-decoration-line: underline;
+}
+
+.services {
+	background-color: #fff;
+	padding-bottom: 89px;
+	padding-top: 100px;
+}
+
+.services__item {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.services__item-img {
+	width: 460px;
+	height: 333px;
+	border-radius: 6px;
+	margin-right: 57px;
+	flex-shrink: 0;
+	overflow: hidden;
+}
+
+.services__item-img-pic {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.services__item-content {
+	margin-top: 14px;
+}
+
+.services__item-title {
+	font-size: 36px;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.services__item-text {
+	line-height: 27px;
+	color: #333;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+
+.button {
+	border-radius: 35px;
+	background-color: #F5170E;
+	border: #F5170E;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	padding: 18px 40px;
+	cursor: pointer;
+}
+
+.pagination--black-color {
+	margin-top: 68px;
+}
+
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 54px;
+}
+
+.pagination__display {
+	color: #fff;
+	font-weight: 400;
+	margin-right: 15px;
+	color: #000;
+}
+
+.pagination__list {
+	display: flex;
+	align-items: center;
+}
+
+.pagination__item {
+	margin-right: 10px;
+}
+
+.pagination__link {
+	display: inline-block;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 50%;
+	padding: 4px 11px;
+	color: #000;
+}
+
+.pagination__item--active .pagination__link {
+	background-color: red;
+	color: #FFFFFF;
+}
+.pagination__item:last-child {
+	margin-right: 0;
+}
+
+.partners {
+	background-color: #f4f5f5;
+	padding-top: 85px;
+	padding-bottom: 100px;
+}
+
+.partners__title {
+	margin-bottom: 73px;
+}
+
+.bigtitle {
+	font-size: 48px;
+	color: #202123;
+	font-weight: bold;
+}
+
+.partners__list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: -66px;
+}
+
+.partners__item {
+	width: calc(100% / 4);
+	margin-bottom: 66px;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.footer {
+	padding-bottom: 30px;
+	margin-top: 45px;
+	background-color: #001821;
+}
+.footer .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 40px;
+	border-top: 1px solid #353637;
+	color: #00000;
+}
+
+.contacts__text{
+	font-size: 11px;
+	color: #9A9A9A;
+}
+
+.socials__item{
+	margin-right: 10px;
+	opacity: 0.5;
+}
+
+.socials__item:last-child{
+	margin-right: 0;
+}
+.socials__list {
+	display: flex;
+	align-items: center;
+}
+
+.socials__item:hover{
+	opacity: 1;
+}
