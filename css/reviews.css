@@ -88,27 +88,27 @@ button {
 	font-weight: 400;
 	margin-bottom: 5px;
 	display: block;
-	transition: .4s;
 }
-
+/*
 .contacts__phone:hover {
 	color:#DA0100;
 	transition: .4s;
 }
-
+*/
 .contacts__graph {
 	display: inline-block;
 	position: relative;
 	text-decoration-line: underline;
 	font-size: 13px;
-	transition: .4 all ease-in-out;
-}
+	transition: all .4s ease-out;
 
+}
+/*
 .contacts__graph:hover {
 	color:#DA0100;
 	transition: .4 all ease-in-out;
 }
-
+*/
 .contacts__graph:hover .schedule {
 	display: inline-block;
 	width: 156px;
@@ -121,8 +121,8 @@ button {
 	right: 0px;
 	margin-top: 12px;
 	opacity: 1;
-	transition: .4 all ease-in-out;
 	color: #1E1F20;
+	transition: all .4s ease-out;
 }
 
 .contacts__graph .schedule:before {
@@ -152,7 +152,6 @@ button {
 	background: #fff;
 	display: none;
 	top: 100%;
-	transition: .4s all ease-in-out;
 	opacity: 0;
 }
 
