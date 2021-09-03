@@ -93,7 +93,58 @@ ul {
 	position: relative;
 	text-decoration-line: underline;
 	font-size: 13px;
-	transition: color .4s
+	transition: all .4s ease-out;
+
+}
+
+.contacts__graph:hover .schedule {
+	display: inline-block;
+	width: 156px;
+	background-color: #EDEDED;
+	padding: 20px 18px;
+	border-radius: 6px;
+	text-align: left;
+	position: absolute;
+	top: 100%;
+	right: 0px;
+	margin-top: 12px;
+	opacity: 1;
+	color: #1E1F20;
+	transition: all .4s ease-out;
+}
+
+.contacts__graph .schedule:before {
+	content: "";
+	height: 18px;
+	width: 100%;
+	display: block;
+	left: 0;
+	background-color: transparent;
+}
+
+.contacts__graph .schedule:after, .contacts__graph .schedule:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	bottom: 100%;
+}
+
+.contacts__graph .schedule:after {
+	right: 10px;
+	border: 12px solid transparent;
+	border-bottom-color: #EDEDED;
+}
+
+.schedule {
+	position: absolute;
+	background: #fff;
+	display: none;
+	top: 100%;
+	opacity: 0;
+}
+
+.schedule__text--bold {
+	font-weight: bold;
 }
 
 .contacts__graph:hover {

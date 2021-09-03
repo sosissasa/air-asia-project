@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 170px;
 
 }
-*/
+/
 
 .menu__list {
 	padding-top: 150px;
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: color .4s;
 }
 
-/
+
 .contacts__graph {
     display: inline-block;
     font-size: 13px;
@@ -132,6 +132,66 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
     margin-top: -6px;
     transition: color .4s;
+}
+
+.contacts__graph {
+    display: block;
+    position: relative;
+    text-decoration-line: underline;
+    font-size: 13px;
+    transition: all .4s ease-out;
+    text-align: right;
+
+}
+
+.contacts__graph:hover .schedule {
+    display: inline-block;
+    width: 156px;
+    background-color: #EDEDED;
+    padding: 20px 18px;
+    border-radius: 6px;
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    margin-top: 12px;
+    opacity: 1;
+    color: #1E1F20;
+    transition: all .4s ease-out;
+}
+
+.contacts__graph .schedule:before {
+    content: "";
+    height: 18px;
+    width: 100%;
+    display: block;
+    left: 0;
+    background-color: transparent;
+}
+
+.contacts__graph .schedule:after, .contacts__graph .schedule:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 100%;
+}
+
+.contacts__graph .schedule:after {
+    right: 10px;
+    border: 12px solid transparent;
+    border-bottom-color: #EDEDED;
+}
+
+.schedule {
+    position: absolute;
+    background: #fff;
+    display: none;
+    top: 100%;
+    opacity: 0;
+}
+
+.schedule__text--bold {
+    font-weight: bold;
 }
 
 .contacts__graph:hover {
