@@ -87,7 +87,10 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
     margin-right: 55px;
     padding-top: 10px;
+    transition: color .4s;
 }
+
+
 
 .menu__item:last-child {
     margin-right: 0;
@@ -98,8 +101,9 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-.menu__link:hover {
-    color: #DA0100
+.menu__item:hover {
+    color: #DA0100;
+    transition: color .4s;
 }
 
 .contacts {
@@ -111,7 +115,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 26px;
     text-decoration: none;
     font-style: normal;
+    transition: color .4s;
 }
+
+.contacts__tel:hover {
+    color: #DA0100;
+    transition: color .4s;
+}
+
 /
 .contacts__graph {
     display: inline-block;
@@ -120,6 +131,12 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
     text-align: right;
     margin-top: -6px;
+    transition: color .4s;
+}
+
+.contacts__graph:hover {
+    color: #DA0100;
+    transition: color .4s;
 }
 
 .main {
@@ -155,12 +172,14 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     box-sizing: border-box;
     cursor: pointer;
+    transition: all .4s;
 }
 
 .button:hover {
     color: #F5170E;
     background: #FFFFFF;
     border: #F5170E;
+    transition: all .4s;
 }
 
 .tours {
@@ -393,60 +412,6 @@ h1, h2, h3, h4, h5, h6 {
 .about__button {
 }
 
-.footer {
-}
-
-.footlogo {
-}
-
-.footlogo__img {
-}
-
-.footmenu {
-}
-
-.footmenu__list {
-}
-
-.footmenu__item {
-    display: inline-block;
-    margin-right: 54px;
-}
-.footmenu__item:last-child {
-    margin-right: 0;
-}
-.footmenu__link {
-}
-
-.submenu__item {
-
-}
-
-.social {
-}
-
-.social__list {
-}
-
-.social__item {
-    display: inline-block;
-    margin-right: 5px;
-}
-
-.social__link {
-
-}
-
-.social__icon {
-}
-
-.subcontacts {
-}
-
-.contacts__text {
-}
-
-
 .option {
     display: flex;
     width: 50%;
@@ -482,10 +447,115 @@ h1, h2, h3, h4, h5, h6 {
     /*z-index: -1;*/
 }
 
-
-.footer__container {
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
+.footer {
+    padding-bottom: 30px;
+    background-color: #001821;
 }
-© 2021 GitHub, Inc.
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    border-top: 1px solid #353637;
+    color: #00000;
+}
+
+.contacts__text{
+    font-size: 11px;
+    color: #9A9A9A;
+}
+
+.socials__item{
+    margin-right: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.socials__icon{
+    position: relative;
+}
+
+.socials__icon:hover:before {
+    opacity: 1;
+}
+
+.socials__icon:hover:after {
+    opacity: 0;
+}
+
+.socials__icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+}
+
+.socials__icon:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+
+}
+
+.socials__icon--telegram:after {
+    background: url(./../img/sprites.png)-234px -10px;
+    transition: all .4s;
+}
+
+.socials__icon--telegram:before {
+    background: url(./../img/sprites.png)-290px -10px;
+}
+
+.socials__icon--vk:after {
+    background: url(./../img/sprites.png)-346px -10px;
+    transition: all .4s;
+}
+
+.socials__icon--vk:before {
+    background: url(./../img/sprites.png)-402px -10px;
+    transition: all .4s;
+}
+
+
+.socials__icon--facebook:after {
+    background: url(./../img/sprites.png)-10px -10px;
+    transition: all .4s;
+}
+
+.socials__icon--facebook:before {
+    background: url(./../img/sprites.png)-66px -10px;
+    transition: all .4s;
+}
+
+
+.socials__icon--inst:after {
+    background: url(./../img/sprites.png)-122px -10px;
+    transition: all .4s;
+}
+
+.socials__icon--inst:before {
+    background: url(./../img/sprites.png)-178px -10px;
+    transition: all .4s;
+
+}
+
+.socials__item:last-child{
+    margin-right: 0;
+}
+.socials__list {
+    display: flex;
+    align-items: center;
+}
+
+.contacts__phone {
+    font-size: 26px;
+    transition: color .4s;
+}
+.contacts__phone:hover{
+    color: #DA0100;
+    transition: color .4s;
+}
